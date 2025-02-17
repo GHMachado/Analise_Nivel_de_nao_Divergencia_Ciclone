@@ -42,14 +42,28 @@ Feito isso, vamos instalar as bibliotecas que iremos utilizar. Utilize o comando
 conda install -c conda-forge matplotlib xarray numpy pandas
 ```
 
-### Após isso, seu ambiente virtual estará pronto para rodar os códigos.
+#### Após isso, seu ambiente virtual estará pronto para rodar os códigos. 
 
-
-# 💻 Utilizando os scripts
+## 💻 Utilizando os scripts
 
 Os scripts estão divididos de 3 formas:
 
 1. [Divergencia.py](https://github.com/GHMachado/Plots_para_Omega_e_divergencia_ERA5/blob/main/Divergencia.py) - Plota apenas o perfil vertical de divergência
 2. [Omega.py](https://github.com/GHMachado/Plots_para_Omega_e_divergencia_ERA5/blob/main/Omega.py) - Plota apenas o perfil vercial do Omega
-3. [Omega_divergencia.py](https://github.com/GHMachado/Plots_para_Omega_e_divergencia_ERA5/blob/main/Omega_divergencia.py) - Plota os dois perfis verticais, um ao lado do outro.
+3. [Omega_divergencia.py](https://github.com/GHMachado/Plots_para_Omega_e_divergencia_ERA5/blob/main/Omega_divergencia.py) - Plota os dois perfis verticais, lado a lado.
+
+Os scripts são utilizados para fazer uma análise do NDD de um ponto com Lat/Lon específico, sendo necessário carregar um arquivo .csv com os pontos de interesse a serem estudados. \
+\
+Também é necessário carregar um arquivo Netcdf (.nc de preferência, não foi testado com arquivos .grib) com dados de "Vertical Velocity" e "Divergence" retirados da [Reanálise ERA5](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels?tab=download). Escolha os níveis de pressão de interesse para fazer esse estudo. \
+\
+Essas são as únicas exigências que os scripts possuem para funcionar corretamente, personalize o gráfico gerado a sua necessidade e gosto.
+
+## 📖 Estudo de caso
+
+Esses scripts foram utilizados para um estudo sobre o NDD do [Furacão Ophelia (2017)](https://www.nhc.noaa.gov/data/tcr/AL172017_Ophelia.pdf) para o trabalho final da disciplina de Sinótica I, que posteriormente foi apresentado na [CPAM 2024](https://cpam2024.com/).
+
+O estudo foi desenvolvido por [Gabriel Machado](https://github.com/GHMachado), [Ronaldo Albuquerque](https://github.com/albqrqe) e Ana Luiza Perry, com orientação da Prof. Ana Cristina Palmeira.
+
+Qualquer dúvida sobre este trabalho, entre em contato.
+
 
